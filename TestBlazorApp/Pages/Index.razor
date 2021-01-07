@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<FinalComponent TItem="string" @bind-Items="model.Names"></FinalComponent>
+
+@code {
+
+	Model model = new Model();
+
+	public class Model
+	{
+
+		public string[] Names { get; set; }
+
+	}
+
+}

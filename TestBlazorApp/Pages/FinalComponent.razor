@@ -1,0 +1,11 @@
+﻿@typeparam TItem
+@inherits FinalBase<TItem>
+
+<div>Items</div>
+@if (Items != null)
+{
+	@foreach (var item in Items)
+	{
+		<div>@item</div>
+	}
+}
